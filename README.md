@@ -2,9 +2,16 @@
 Counting number of cars crossing a given line
 
 # Approach
-The model first finds contours and then assisgns car id
+The given task can be diided into following main subtasks:
+- Car Identification
 
-# Model
+  This is achieved by frame differencing and contour plots
+  
+- Car Tracking (check if car crossed up or down)
+  
+  This can be done by checking if position of coordinates with respect to line (previously and now) is changed
+
+# Model for car identification
 ## Available Models
 - YOLO
 - SSD
@@ -18,5 +25,6 @@ Assuming that speed is of greater importance in this case, it can be concluded t
 However, in case if the accuracy if model is of greater concern, then we should use SSD.
 
 # Output
-Note: Some output is trimmed due to size constraints, these will be updated shortly
+Note: Some output is trimmed due to size constraints, these will be updated shortly.
+
 Folder link: [click here](https://drive.google.com/drive/folders/1Y1T2576iqlXoNW3FsAPz5YllugS9Wlw_?usp=sharing)
